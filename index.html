@@ -1,0 +1,800 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <head>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" 
+        onload="renderMathInElement(document.body);"></script>
+        <link rel="stylesheet" href="style.css">
+        
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+        <style>
+            
+                pre[class*="language-"], 
+                code[class*="language-"] {
+                    background: #000000 !important; /* Pure Black */
+                    color: #ffffff !important;      /* Ensure base text is white */
+                }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-hlsl.min.js"></script>
+        
+    </head>
+<body style="background-color: #000000 ">
+<div class="article">
+
+<h1>
+<a>
+		<strong>Matemathics Explanations of Plot Programming</strong>
+	</a>
+</h1>
+
+<h1>
+<a>
+		<strong>Math Explanation CODE relations</strong>
+</a>
+</h1>	
+    
+<p class="siteSub">
+
+From Andraelity, how CODE using math. 
+
+</p>
+
+<p class="roleNote">
+
+    In thy following lines we are going to verify or create the connexion that would allow us to unite code with mathematics
+
+</p>
+
+<div class="articleRight">
+    
+<div  class="articleRightInner">
+
+<img width="400"  src="Img/ShapesBackgroundScreen.png" class="center">
+<br>  
+<a target = "_blank" href="https://www.youtube.com/channel/UC-4AaN4M3Sq1lY6NVZnfaEw">Youtube/Andreality</a>
+</div>
+</div>
+<p>
+    
+<strong>Shaders-PLANE-PolyG</strong>
+
+We already had stablish ideas that are very important on regards, of how it is to paint shapes that are define by mathematical rules.
+This rules that we could make use to present more and more particularities on regards on the uses of programming properties, but over all 
+Mathematical properties, ideas an concepts, that are generaly define with mathematical properties.
+Now the main ideas on painting were define, the next thing that we need to specify is how we could make modification on this shapes
+over the space, lets explain.
+
+<br>
+
+
+</p>
+
+
+<div class="contentsPanel">
+<div class="contentsHeader">Index Webpages Redirect</div>
+<ul>
+
+
+<li><span>&.</span><a href="https://andreality1.github.io/Mathematics-Code_INDEX/"> Index</a></li>
+<li><span>0.</span><a href="https://andreality1.github.io/Mathematics-Code-EulersIdentiy/"> EulersIdentity</a></li>
+<li><span>1.</span><a href="https://andreality1.github.io/Mathematics-Code-Derivatives/"> Derivatives</a></li>
+<li><span>2.</span><a href="https://andreality1.github.io/Mathematics-Code-Shaders/"> Shaders</a></li>
+            
+
+</ul>
+</div>
+
+<!-- 
+    
+ _______           _______  ______   _______  _______  _______ 
+(  ____ \|\     /|(  ___  )(  __  \ (  ____ \(  ____ )(  ____ \
+| (    \/| )   ( || (   ) || (  \  )| (    \/| (    )|| (    \/
+| (_____ | (___) || (___) || |   ) || (__    | (____)|| (_____ 
+(_____  )|  ___  ||  ___  || |   | ||  __)   |     __)(_____  )
+      ) || (   ) || (   ) || |   ) || (      | (\ (         ) |
+/\____) || )   ( || )   ( || (__/  )| (____/\| ) \ \__/\____) |
+\_______)|/     \||/     \|(______/ (_______/|/   \__/\_______)
+ _______  _______  _______  _______          _________ _______  _______ 
+(  ____ \(  ____ )(  ___  )(  ____ )|\     /|\__   __/(  ____ \(  ____ \
+| (    \/| (    )|| (   ) || (    )|| )   ( |   ) (   | (    \/| (    \/
+| |      | (____)|| (___) || (____)|| (___) |   | |   | |      | (_____ 
+| | ____ |     __)|  ___  ||  _____)|  ___  |   | |   | |      (_____  )
+| | \_  )| (\ (   | (   ) || (      | (   ) |   | |   | |            ) |
+| (___) || ) \ \__| )   ( || )      | )   ( |___) (___| (____/\/\____) |
+(_______)|/   \__/|/     \||/       |/     \|\_______/(_______/\_______)
+                                                                         
+-->
+
+
+
+<h2 style="font-size: 50px;" ><strong>Computer Shaders Graphics</strong></h2>
+
+<!-- <h1><b><a href="https://andraelity.github.io/WebPageVideoTest/" > https://andraelity.github.io/WebPageVideoTest/ </a></b></h1> -->
+<!-- <h1><b><a> Factorial Identification </a></b></h1> -->
+
+
+<!--                                                                                           
+▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄     ▄▄▄▄▄▄      ▄▄     ▄▄▄   ▄▄     ▄▄▄▄   ▄▄        ▄▄▄▄▄▄▄▄           
+▀▀▀██▀▀▀  ██▀▀▀▀██   ▀▀██▀▀     ████    ███   ██   ██▀▀▀▀█  ██        ██▀▀▀▀▀▀           
+   ██     ██    ██     ██       ████    ██▀█  ██  ██        ██        ██                 
+   ██     ███████      ██      ██  ██   ██ ██ ██  ██  ▄▄▄▄  ██        ███████            
+   ██     ██  ▀██▄     ██      ██████   ██  █▄██  ██  ▀▀██  ██        ██                 
+   ██     ██    ██   ▄▄██▄▄   ▄██  ██▄  ██   ███   ██▄▄▄██  ██▄▄▄▄▄▄  ██▄▄▄▄▄▄           
+   ▀▀     ▀▀    ▀▀▀  ▀▀▀▀▀▀   ▀▀    ▀▀  ▀▀   ▀▀▀     ▀▀▀▀   ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀           
+                                                                                         
+                                                                                         
+                                                                                         
+▄▄▄▄▄▄      ▄▄▄▄    ▄▄▄▄▄▄▄▄     ▄▄     ▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄     ▄▄▄▄    ▄▄▄   ▄▄           
+██▀▀▀▀██   ██▀▀██   ▀▀▀██▀▀▀    ████    ▀▀▀██▀▀▀   ▀▀██▀▀    ██▀▀██   ███   ██           
+██    ██  ██    ██     ██       ████       ██        ██     ██    ██  ██▀█  ██           
+███████   ██    ██     ██      ██  ██      ██        ██     ██    ██  ██ ██ ██           
+██  ▀██▄  ██    ██     ██      ██████      ██        ██     ██    ██  ██  █▄██           
+██    ██   ██▄▄██      ██     ▄██  ██▄     ██      ▄▄██▄▄    ██▄▄██   ██   ███           
+▀▀    ▀▀▀   ▀▀▀▀       ▀▀     ▀▀    ▀▀     ▀▀      ▀▀▀▀▀▀     ▀▀▀▀    ▀▀   ▀▀▀           
+                                                                                         
+-->
+
+
+<hr>
+<hr>
+
+<h1 style="font-size: 40px;" id =""><b> Triangle Rotation. </b></h1>
+
+
+<img src="Img/TriangleAxisClockWise.gif"  style="display: block; margin: 0 auto; width: 50%;">
+<img src="Img/TrianglePointCounterClockWise.gif"  style="display: block; margin: 0 auto; width: 50%;">
+
+
+
+
+<div style = "font-size: 21px">
+
+
+$$\begin{aligned}
+&\text{First of all we need to identify two types of rotation:}\\
+&\mathbf{1.\ Rotation\ on\ its\ axis}\\
+&\mathbf{2.\ Rotation\ on\ a\ point}\\
+\end{aligned}$$
+
+
+<pre><code class="language-hlsl">
+
+float2x2 rotationMatrix(float rotationAngle)
+{
+    float2x2 rot = float2x2(cos(rotationAngle), 
+                            -sin(rotationAngle), 
+                                                sin(rotationAngle),
+                                                cos(rotationAngle));
+
+    return rot;
+}
+
+</code></pre>
+
+</div>
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\mathbf{1.\ Rotation\ on\ its\ axis}\\
+\end{aligned}$$
+
+<pre><code class="language-hlsl">
+
+fixed4 frag (PixelData i) : SV_Target
+{
+
+
+float2 uv =  i.uv ;
+
+float4 colorWhite = float4(1,1,1,1); // Color white.
+float4 colorBlack = float4(0,0,0,1); // Color Black.
+
+float2 coordinateScale = (uv * 2.0)  - 1.0;
+
+float2 size = float2(0.5 ,0.5);
+float2 screenSpace = coordinateScale;
+
+float2x2 matrixOut = rotationMatrix(_Time.y);
+screenSpace = mul(matrixOut, screenSpace);
+
+float disHypotenuse = dot(size, screenSpace ) - (size.x * size.y); 
+
+screenSpace = -screenSpace;
+
+float sdf = max(max(screenSpace.x, screenSpace.y), disHypotenuse);
+
+float shader = 1.0 - smoothstep(0.0, 0.01, sdf);
+
+float4 col = colorBlack;
+
+col = fixed4(shader, shader, shader, 1.0);
+
+return col;
+
+}
+
+
+</code></pre>
+
+</div>
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\mathbf{2.\ Rotation\ on\ a\ point}\\
+\end{aligned}$$
+
+
+<pre><code class="language-hlsl">
+
+fixed4 frag (PixelData i) : SV_Target
+{
+
+
+float2 uv =  i.uv ;
+
+float4 colorWhite = float4(1,1,1,1); // Color white.
+float4 colorBlack = float4(0,0,0,1); // Color Black.
+
+float2 coordinateScale = (uv * 2.0)  - 1.0;
+
+float2 size = float2(0.5 ,0.5);
+
+float2 position = float2(0.5, 0.5);
+
+float2x2 matrixOut = rotationMatrix(_Time.y);
+
+position = mul(matrixOut, position);
+float2 screenSpace = coordinateScale - position;
+
+float disHypotenuse = dot(size, screenSpace ) - (size.x * size.y); 
+
+screenSpace = -screenSpace;
+
+float sdf = max(max(screenSpace.x, screenSpace.y), disHypotenuse);
+
+float shader = 1.0 - smoothstep(0.0, 0.01, sdf);
+
+float4 col = colorBlack;
+
+col = fixed4(shader, shader, shader, 1.0);
+
+return col;
+
+}
+    
+</code></pre>
+
+</div>
+
+
+
+
+<div style = "font-size: 21px">
+
+
+$$\begin{aligned}
+
+&\textbf{1. Represent the Point in Polar Coordinates}\\
+&\text{Any point}\ (x, y) \text{can be described by its distance from the origin }(r)\\
+&\text{and its current angle } (\theta):\\
+&x = r \cos \theta \\
+&y = r \sin \theta\\
+
+&\\[-15pt]\\
+
+&\textbf{2. Apply the Rotation} \\
+&\text{Now, we rotate the point by an additional angle}\ \phi.\\
+&\text{The distance $r$ stays the same, but the new angle is} \ (\theta + \phi).\\ 
+&\text{The new coordinates } (x', y')\ \text{are}\ :\\
+&x' = r \cos(\theta + \phi)\\
+&y' = r \sin(\theta + \phi)\\
+
+&\\[-15pt]\\
+
+&\textbf{3. Use Trigonometric Identities }\\
+&\text{We apply the angle addition formulas:}\\
+&\cos(A + B) = \cos A \cos B - \sin A \sin B\\
+&\sin(A + B) = \sin A \cos B + \cos A \sin B\\
+&\text{Substituting these into our equations for } x' and \ y':\\
+&x' = r(\cos \theta \cos \phi - \sin \theta \sin \phi)\\
+&y' = r(\sin \theta \cos \phi + \cos \theta \sin \phi)\\
+
+&\\[-15pt]\\
+
+&\textbf{4. Final Substitution}\\
+&\text{By distributing }\ r \ \text{and substituting the original }\\
+&x = r \cos \theta \\
+&and \\
+&\ y = r \sin \theta \\
+&\text{ back into the equations, we get the standard rotation transformation:}\\
+&x' = x \cos \phi - y \sin \phi \\
+&y' = x \sin \phi + y \cos \phi \\
+
+&\\[-15pt]\\
+
+&\textbf{5. Form the Matrix}\\
+\\
+&\text{We can write these two linear equations as a single matrix multiplication:}\\
+&\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} \cos \phi & -\sin \phi \\ \sin \phi & \cos \phi \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}\\
+\\
+&\text{This gives us the standard Rotation Matrix:}\\
+&R(\phi) = \begin{pmatrix} \cos \phi & -\sin \phi \\ \sin \phi & \cos \phi \end{pmatrix}\\
+\\
+&\text{But on HLSL and CG Programing the order of an array is Column Major:}\\
+&\mathbf{column\ Major\ }R(\phi) = \begin{pmatrix} \cos \phi & \sin \phi \\ -\sin \phi & \cos \phi \end{pmatrix}\\
+
+\end{aligned}$$
+
+
+</div>
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+
+&\text{if you are noticing that the rotation of the shape happens in a clockwise notation. }\\
+&\text{but the points are rotating according to the formula are rotating in the counter-clock wise}\\
+&\text{direction}\\
+&\text{why ????????}\\\
+
+\end{aligned}$$
+
+$$\begin{aligned}
+
+&\text{The reason why is because we are rotating the plane not the shape.}\\
+&\text{The idea happens to beside in the same explanation of the ScreenSpace and the ComputationSpace}\\
+&\text{if you rotate the points in the ComputationSpace are going to be presented in the}\\
+&\text{ScreenSpace differently.}\\
+&\text{}\\\
+
+\end{aligned}$$
+
+</div>
+
+
+
+
+<img src="Img/RotationPlane_1.png"  style="display: block; margin: 0 auto; width: 50%;">
+<img src="Img/RotationPlane_2.png"  style="display: block; margin: 0 auto; width: 50%;">
+<img src="Img/RotationPlane_3.png"  style="display: block; margin: 0 auto; width: 50%;">
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+
+&\text{The idea is that every point is going to be modify in the computer space, but cuz this }\\
+&\text{points are also part of the screenspace is when you are going to notice that the }\\
+&\text{information is going to be represented in a completely different rotation, thanks to }\\
+&\text{this representation.}\\
+
+\end{aligned}$$
+
+</div>
+    
+    
+
+<hr>
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_RotationExplain_1.shader">
+Shader_RotationExplain_1
+</a>
+
+<br>
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_RotationExplain_2.shader">
+Shader_RotationExplain_2
+</a>
+    
+                                                                                                            
+
+<!--                                                                                           
+▄▄▄▄       ▄▄▄▄      ▄▄     ▄▄           ▄▄     ▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄     ▄▄▄▄    ▄▄▄   ▄▄ 
+▄█▀▀▀▀█    ██▀▀▀▀█    ████    ██          ████    ▀▀▀██▀▀▀   ▀▀██▀▀    ██▀▀██   ███   ██ 
+██▄       ██▀         ████    ██          ████       ██        ██     ██    ██  ██▀█  ██ 
+ ▀████▄   ██         ██  ██   ██         ██  ██      ██        ██     ██    ██  ██ ██ ██ 
+     ▀██  ██▄        ██████   ██         ██████      ██        ██     ██    ██  ██  █▄██ 
+█▄▄▄▄▄█▀   ██▄▄▄▄█  ▄██  ██▄  ██▄▄▄▄▄▄  ▄██  ██▄     ██      ▄▄██▄▄    ██▄▄██   ██   ███ 
+ ▀▀▀▀▀       ▀▀▀▀   ▀▀    ▀▀  ▀▀▀▀▀▀▀▀  ▀▀    ▀▀     ▀▀      ▀▀▀▀▀▀     ▀▀▀▀    ▀▀   ▀▀▀ 
+-->
+                                                                                         
+
+<hr>
+<hr>
+<h1 style="font-size: 40px;"id ="Axis Lines"><b> Scalation </b></h1>
+
+
+<img src="Img/EscalationRepresentation.gif"  style="display: block; margin: 0 auto; width: 50%;">
+
+
+ 
+<div style = "font-size: 21px">
+  
+
+    
+$$\begin{aligned}
+&\text{The scalation is pretty straigh forward, what we need to scale is the plane;}\\
+&\text{not the shape, by the scalation of the plane we are going to also scale the shape }\\
+&\text{which is going to be present in the plane, cuz obviously the shape is in the plane.}\\
+\end{aligned}$$
+
+
+$$\begin{aligned}
+&\text{The shape that we are going to scale in this case is going to be the triangle, this}\\
+&\text{this shape contains multiple expressions in regards of mathematical theories, and }\\
+&\text{also at the same time really simple to imagine, the idea here is to think as if the}\\
+&\text{measurements, or more specificly the units that make the measurement space measure }\\
+&\text{something else. }\\
+\end{aligned}$$
+
+<pre><code class="language-hlsl">
+ 
+
+fixed4 frag (PixelData i) : SV_Target
+{
+
+    float2 uv =  i.uv ;
+
+    float4 colorWhite = float4(1,1,1,1); // Color white.
+    float4 colorBlack = float4(0,0,0,1); // Color Black.
+
+    float2 coordinateScale = (uv * 2.0)  - 1.0;
+    coordinateScale = coordinateScale/(float2(0.55555, 1.0));
+
+    float2 size = float2(0.5 ,0.5);
+    float2 screenSpace = coordinateScale;
+
+</code></pre>
+
+</div>
+
+
+<div style = "font-size: 35px">
+<pre><code class="language-hlsl">
+    
+    float scalationRatio = 2.0;
+    
+    screenSpace = scalationRatio * coordinateScale;
+
+</code></pre>
+</div>    
+
+<div style = "font-size: 21px">
+
+<pre><code class="language-hlsl">
+
+
+    float disHypotenuse = dot(size, screenSpace ) - (size.x * size.y); 
+
+    screenSpace = -screenSpace;
+
+    float sdf = max(max(screenSpace.x, screenSpace.y), disHypotenuse);
+
+    float shader = 1.0 - smoothstep(0.0, 0.01, sdf);
+
+    float4 col = colorBlack;
+
+    col = fixed4(shader, shader, shader, 1.0);
+
+    return col;
+
+}    
+
+</code></pre>
+
+</div>
+
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\text{In this case we can identify that the entire idea of SCALATION could be summarize in 2 lines}\\
+&\text{the uses of the scalation is summarize as a relation of how many unit of measure we can fit}\\
+&\text{in the minimum entity of measure, its like saying, how many ones we can fit in one one if we make}\\
+&\text{ one half equal to 1}\\
+&\text{ }\\
+\end{aligned}$$
+
+$$\mathbb{R} = \mathbf{Real \ numbers }\\$$
+
+$$\text{if we make this relationship for a set of real number } \\$$
+
+$$\\[5ex]\\$$
+
+$$scale = \frac{1}{2}$$
+
+$$\\[5ex]\\$$
+
+$$\mathbb{R}_{\text{spaceScale}} = \quad \mathbb{R} * scale \quad = \quad \mathbb{R} * \frac{1}{2}\\$$ 
+
+$$\\[5ex]\\$$
+
+$$\text{but we want to make such relation that makes } \\$$
+
+$$\\[5ex]\\$$
+
+$$\mathbb{R}_{\text{spaceScale}} \implies \mathbb{R} * \frac{1}{2} = \mathbb{R} * 1.0\\$$
+$$\\[5ex]\\$$
+$$\text{which is false, there is no way to make sense of the previous equation, its just not true} \\$$
+$$\text{so instead we create a different space that allows to make the prevoius space true} \\$$
+$$\text{then for another set of real numbers we make the next relationship to make sense of both spaces } \\$$
+$$\\[5ex]\\$$
+$$\mathbb{R}_{\text{spaceCorrection}} \implies  \frac{1}{\mathbb{scale}} * \mathbb{R}_{\text{spaceScale}}$$
+
+$$\\[5ex]\\$$
+
+$$\mathbb{R}_{\text{spaceCorrection}} \implies  \frac{1}{\mathbb{scale}} * \mathbb{R}_{\text{spaceScale}} =  2.0 * \mathbb{R}_{\text{spaceScale}}   = \mathbb{R} * 1.0\\$$
+
+$$\\[5ex]\\$$
+
+$$\begin{aligned}
+
+&\text{How many 1's or units in the first space , } \implies \frac{2}{1} = 2\\
+&\text{are in 1's or units of the base space? }\\
+
+\end{aligned}$$
+$$\text{What we can conclude is that there are 2 units in the first space } \\$$ 
+$$\text{for each unit of the base space}\\$$
+
+
+$$\\[5ex]\\$$
+
+$$\text{How many } \mathbb{R}_{\text{spaceScale}} \quad \text{in} \quad \mathbb{R}? ,  
+\implies \frac{\mathbb{R}_{\text{spaceScale}}}{\mathbb{R}} = scale$$
+
+$$\\[5ex]\\$$
+
+$$\frac{\mathbb{R}_{\text{spaceScale}}}{\mathbb{R}} = \quad \frac{\mathbb{\mathbb{R} * scale}}{\mathbb{R}}  \quad = \quad scale$$
+
+<pre><code class="language-hlsl">
+    
+float scalationRatio = 2.0;
+
+screenSpace = scalationRatio * coordinateScale;
+
+</code></pre>
+
+$$\begin{aligned}
+&\text{You could think this representations as trying to measure bills with coins, try to measure  }\\
+&\text{pencils with erasers, try to measure how many of something with something else, }\\
+&\text{one space with another space, this is the main idea behind the scalation ratio.}\\
+&\text{Is the representation of one space within another.}\\
+\end{aligned}$$
+
+
+</div>
+
+    
+
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_Scalation_1.shader">
+Shader_Scalation_1
+</a>
+
+<br>
+
+    
+<!--                                                                                           
+▄▄▄▄▄▄    ▄▄          ▄▄▄▄    ▄▄▄▄▄▄▄▄                                                   
+██▀▀▀▀█▄  ██         ██▀▀██   ▀▀▀██▀▀▀                                                   
+██    ██  ██        ██    ██     ██                                                      
+██████▀   ██        ██    ██     ██                                                      
+██        ██        ██    ██     ██                                                      
+██        ██▄▄▄▄▄▄   ██▄▄██      ██                                                      
+▀▀        ▀▀▀▀▀▀▀▀    ▀▀▀▀       ▀▀                                                      
+                                                                                         
+                                                                                         
+                                                                                         
+▄▄▄▄▄▄▄▄  ▄▄    ▄▄  ▄▄▄   ▄▄     ▄▄▄▄   ▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄     ▄▄▄▄    ▄▄▄   ▄▄    ▄▄▄▄   
+██▀▀▀▀▀▀  ██    ██  ███   ██   ██▀▀▀▀█  ▀▀▀██▀▀▀   ▀▀██▀▀    ██▀▀██   ███   ██  ▄█▀▀▀▀█  
+██        ██    ██  ██▀█  ██  ██▀          ██        ██     ██    ██  ██▀█  ██  ██▄      
+███████   ██    ██  ██ ██ ██  ██           ██        ██     ██    ██  ██ ██ ██   ▀████▄  
+██        ██    ██  ██  █▄██  ██▄          ██        ██     ██    ██  ██  █▄██       ▀██ 
+██        ▀██▄▄██▀  ██   ███   ██▄▄▄▄█     ██      ▄▄██▄▄    ██▄▄██   ██   ███  █▄▄▄▄▄█▀ 
+▀▀          ▀▀▀▀    ▀▀   ▀▀▀     ▀▀▀▀      ▀▀      ▀▀▀▀▀▀     ▀▀▀▀    ▀▀   ▀▀▀   ▀▀▀▀▀   
+                                                                                         
+-->
+
+<hr>
+<hr>
+<h1 style="font-size: 40px;"id ="Axis Lines"><b> Plot Functions </b></h1>
+
+
+<img src="Img/PlotSine.png"  style="display: block; margin: 0 auto; width: 50%;">
+<img src="Img/PlotCubic.png"  style="display: block; margin: 0 auto; width: 50%;">
+<img src="Img/PlotPhenomenom.png"  style="display: block; margin: 0 auto; width: 50%;">
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\text{Now one of the best things that we could do with shaders is the ability to plot polinomials}\\
+&\text{which is something really straight forward and very simple to think about.}\\
+&\text{the only thing that we need to do here is organize the ideas so we can think of it }\\
+&\text{as a relationship of distances, rather than a relationship of points.  }\\
+&\text{ }\\
+\end{aligned}$$
+
+
+<pre><code class="language-hlsl">
+
+fixed4 frag (PixelData i) : SV_Target
+{
+
+    float2 uv =  i.uv ;
+
+    float4 colorWhite = float4(1,1,1,1); // Color white.
+    float4 colorBlack = float4(0,0,0,1); // Color Black.
+
+    float2 coordinateScale = (uv * 2.0)  - 1.0;
+
+    float x = coordinateScale.x; 
+    float y = coordinateScale.y; 
+
+    // Define the function
+    float f_x = x; 
+    
+    // Check distance
+    float thickness = 0.1;
+    float sdf = smoothstep(thickness, 0.0, abs(y - f_x));
+
+
+    float4 col = colorBlack;
+
+    col =  fixed4(0, sdf, 0, 1); // Green line
+
+    return col;
+
+}   
+
+</code></pre>
+
+</div>
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\text{We only need to understand this lines of code }\\
+&\text{and is very simple to imagine what they do in here.}\\
+&\text{is just pure assignment of values }\\
+\end{aligned}$$
+
+<pre><code class="language-hlsl">
+    
+float x = coordinateScale.x;
+float y = coordinateScale.y;
+    
+// Define the function
+float f_x = x; 
+
+// Check distance
+float thickness = 0.1;
+float sdf = smoothstep(thickness, 0.0, abs(y - f_x));
+
+</code></pre>
+
+</div>
+
+
+<div style = "font-size: 21px">
+
+$$\begin{aligned}
+&\text{the only line that we need to really understand is this one. }\\
+\end{aligned}$$
+        
+<pre><code class="language-hlsl">
+
+float sdf = smoothstep(thickness, 0.0, abs(y - f_x));
+
+</code></pre>
+
+$$\begin{aligned}
+&\text{which could be explain like this, the evaluation of the function f\_x}\\
+&\text{and the value of this function is what we going to use to evaluate the distances}\\
+&\text{why?? and how ??? easy, the values of this function are the values of the Y values }\\
+&\text{in the plane, so the idea here is the value that we get here, from the function}\\
+&\text{f\_x, then to take the distance from it, we use the value of Y in the plane coordinates}\\
+&\text{and thats is how we are going to get the points that we need to color in order to }\\
+&\text{make the pixels that we need to plot correctly presented. }\\
+&\text{cuz if we got a distance that would mean that we could could add limits to which  }\\
+&\text{points we could color, depending on which specific ranges they are}\\
+\end{aligned}$$
+        
+
+$$f(x) = x$$
+
+$$\\[3ex]\\$$
+
+$$\text{distance} = |y - f(x)|$$
+
+$$\\[3ex]\\$$
+
+$$sdf \in [0, thickness] \implies pixel = colored $$
+</div>
+
+<hr>
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_PlotFunction_1.shader">
+Shader_PlotFunction_1
+</a>
+
+<br>
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_PlotFunction_2.shader">
+Shader_PlotFunction_2
+</a>
+
+<br>
+
+<a style="color: blue; font-size: 36px; font-weight: bold;" href="https://github.com/Andreality1/Mathematics-Code-Shaders-Plane-Modification/blob/main/Scripts/Shader_PlotFunction_3.shader">
+Shader_PlotFunction_3
+</a>
+
+
+<hr>
+<h1 style="font-size: 30px;"><b> End </b></h1>
+<hr>
+
+    
+
+<!-- 
+_______  _        ______     _  _  _ 
+(  ____ \( (    /|(  __  \   ( )( )( )
+| (    \/|  \  ( || (  \  )  | || || |
+| (__    |   \ | || |   ) |  | || || |
+|  __)   | (\ \) || |   | |  | || || |
+| (      | | \   || |   ) |  (_)(_)(_)
+| (____/\| )  \  || (__/  )   _  _  _ 
+(_______/|/    )_)(______/   (_)(_)(_)
+
+-->
+
+
+<br>
+<br>
+
+<a href="https://andreality1.github.io/Mathematics-Code_INDEX/">
+    <h1 style="font-size: 40px; color: #03B5BE; text-decoration: underline;">
+    <b>
+            Mathematics-Code_INDEX
+    </b>
+    </h1>
+</a>
+
+
+</div>
+
+<br>
+<br>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+    </script>
+
+	
+        <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- <script>window.jQuery </script> -->
+        <!-- <script src="script.js"></script> -->
+
+
+    </body>
+</html>
+
